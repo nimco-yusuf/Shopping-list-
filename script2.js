@@ -8,26 +8,18 @@ const calTotal = document.querySelector('.total')
 
 
 enterBtn.addEventListener('click', clickButton)
-// input.addEventListener('keydown', function(event){
-//     if(event.key === "Enter"){
-//         event.preventDefault()
-//         clickButton()
-//     }
-// }) dont need this cause i can use the last one, the one next to button being clicked
+
 inputNum.addEventListener('keydown', function(event){
     if(event.key === "Enter"){
         event.preventDefault()
         clickButton()
     }
 })
-// function total(inputNum){
-//     let previusValue;
-// return inputNum + previusValue;
-// }
+
 let sumTotal= 0;
 function clickButton(){
     
-    const currentValue = input.value //takes the current value and saves to this variable
+    const currentValue = input.value 
     const currentNumVal = parseFloat(inputNum.value)
 
 
@@ -36,7 +28,7 @@ function clickButton(){
         return;
     }
 
-    input.value = '' //temp spaces before the value is saved into current then this is embtys
+    input.value = '' 
     inputNum.value = '';
 
   

@@ -4,18 +4,10 @@ h1{
 label, button, input, span{
     font-size:1rem;
 }
-.inputSection{
-    display:grid;
-    /* flex-direction:row;
-    text-align:center; */
-    row-gap:3rem;
-    
 
-}
 
 li span:nth-child(2)::before{
-    /* this is since i have vreated dynamically my span its helping
-    to differentiate the two spans i ahve so i can add the $sign for the price */
+    
     content: "$";
     margin-left:0.5rem;
 }
